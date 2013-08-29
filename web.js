@@ -24,6 +24,8 @@ var buf = new Buffer (fs.readFileSync('contact.html'), 'utf-8');
  });
 
 app.configure(function(){app.use(express.static(__dirname + '/css'));});
+app.use(express.static(__dirname + '/js'));
+app.configure(function(){app.use(express.static(__dirname + '/js'));});
 
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
