@@ -4,6 +4,13 @@ var app = express.createServer(express.logger());
 var about_html = 'about.html';
 var contact_html = 'contact.html';
 
+var path   = "css";
+var style   = document.createElement( 'link' );
+style.rel   = 'stylesheet';
+style.type  = 'text/css';
+style.href  = path + '/style.css';
+document.getElementsByTagName( 'head' )[0].appendChild( style );
+
 app.get('/', function(request, response) {
 var fs = require('fs');
 var buf = new Buffer (fs.readFileSync('index.html'), 'utf-8');
