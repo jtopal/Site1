@@ -133,6 +133,7 @@ body.color-2 div#top-nav #fixed-nav li.current a {
 }
 body.color-2 .bg-color{
 	background: #3498db;
+	height: 
 }
 body.color-2 hr {
 	border-bottom: 1px solid #3498db;
@@ -303,7 +304,7 @@ div#top-nav{
 }
 div#top-nav ul {
 
-	font-family: 'Montserrat',  sans-serif;
+	font-family: sans-serif;
 	float: right;
 	margin-bottom: 0px;
 }
