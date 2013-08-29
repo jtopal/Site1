@@ -23,7 +23,7 @@ var buf = new Buffer (fs.readFileSync('contact.html'), 'utf-8');
 
  });
 
-app.use('/css', express.static(_dirname, '/css'));
+app.use('/css', express.static(__dirname, '/css'));
 
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
